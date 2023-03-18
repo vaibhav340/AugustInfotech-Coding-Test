@@ -1,0 +1,19 @@
+<body>
+<div id=”exercises”>
+<p>PHP Exercises</p>
+<p>WordPress Exercises</p>
+<p>Drupal Exercises</p>
+<p>Python Exercises</p>
+<p>.NET Exercises</p>
+<p>Laravel Exercises</p>
+<p>ReactJS Exercises</p>
+</div>
+</body>
+<script>
+$('p').each(function (ele){
+	var text = $(this).text();
+  var bText = text.replace(' ', '</b> ');
+  $(this).html('<b> ' + bText);
+	
+});
+</script>
